@@ -1,7 +1,5 @@
 body {
   background-color: #000000;
-  font-family: "Rubik", "Courier New", Courier, monospace;
-  color: #fff;
   overflow: hidden;
 }
 
@@ -25,7 +23,7 @@ main .personagem.selecionado {
   display: block;
 }
 
-main .personagem .personagem__imagem {
+main .personagem .imagem {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -35,30 +33,30 @@ main .personagem .personagem__imagem {
   position: absolute;
   top: 0;
   left: 120px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   min-height: 100vh;
   max-width: 380px;
   z-index: 1;
 }
 
-.conteudo .conteudo__nome-personagem {
-  font-family: "Secular One", "Courier New", Courier, monospace;
+.conteudo .nome-personagem {
+  color: #ffffff;
   font-size: 48px;
+  font-family: "Secular One";
   font-weight: 400;
   margin-bottom: 20px;
 }
 
-.conteudo .conteudo__descricao-personagem {
-  font-size: 16px;
+.conteudo .descricao {
+  color: #ffffff;
+  font-family: "Rubik";
   line-height: 24px;
 }
 
-.conteudo .conteudo__logo {
-  background-image: url(../image/one-piece-logo.png);
+.conteudo .logo {
+  background-image: url("../imagens/one-piece-logo.png");
   background-size: cover;
   height: 100px;
   width: 230px;
@@ -79,18 +77,18 @@ main .personagem .personagem__imagem {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.botoes .botao{
+.botoes .botao {
   border: none;
-  background: none;
+  background: #000000;
   cursor: pointer;
   border-radius: 50%;
 }
 
-.botoes .botao img{
+.botoes .botao img {
   border-radius: 50%;
 }
 
-.botoes .botao.selecionado{
+.botoes .botao.selecionado {
   transform: scale(1.2);
-  box-shadow: 0 0 10px #d9d9d9d9;
+  box-shadow: 0 0 10px #d9d9d9;
 }
